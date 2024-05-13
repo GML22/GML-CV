@@ -87,16 +87,15 @@
 
 % Inspiration from:
 % https://github.com/Johayon/Data-Scientist-Resume-LaTeX/blob/master/twentysecondcv.cls
-\smartdiagramset{bubble center node font = \scriptsize, bubble node font = 
+\smartdiagramset{bubble center node font = \footnotesize, bubble node font = 
 \scriptsize, bubble center node size = 0.4cm, bubble node size = 0.4cm,
-distance center/other bubbles = 0.3cm, distance text center bubble = 0.4cm,
-bubble center node color = bluecol, bubble center node font = \small, set 
-color list = {purplecol, purplecol, purplecol, purplecol, purplecol,
-purplecol, purplecol, purplecol, purplecol}, bubble fill opacity = 0.6,
-bubble text opacity = 1, description title text width=0.5cm, description 
-title width=0.5cm, description width=5cm, description text width=5cm, 
-descriptive items y sep =1.25, back arrow distance = 0, back arrow 
-disabled = true, border color = white}
+distance center/other bubbles = 0.4cm, distance text center bubble = 0.4cm,
+bubble center node color = bluecol, set color list = {purplecol, purplecol, 
+purplecol, purplecol, purplecol, purplecol, purplecol, purplecol, purplecol}, 
+bubble fill opacity = 0.6, bubble text opacity = 1, description title text 
+width=0.5cm, description title width=0.5cm, description width=5cm, 
+description text width=5cm, descriptive items y sep =1.25, back arrow 
+distance = 0, back arrow disabled = true, border color = white}
 \newcommand{\bubblediagram}[1]{\smartdiagram[bubble diagram]{#1}}
 
 % Hobby icon
