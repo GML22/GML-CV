@@ -61,7 +61,6 @@
 <body>
   <header>
     <div class="dropdown">
-      <button class="droplbl" id="butt_lbl">CV Language: </button>
       <button class="dropbtn">
         <span class="flag-icon flag-icon-gb flag-large" id="butt_1" 
         onclick="changeFlag('gb')"></span>
@@ -87,7 +86,6 @@
 
       // Variables definition
       var pdf_viewer = document.getElementById('pdf-viewer');
-      var butt_lbl = document.getElementById('butt_lbl');
       var butt1 = document.getElementById('butt_1');
       var butt2 = document.getElementById('butt_2');
 
@@ -114,7 +112,6 @@
         butt2.setAttribute("class", "flag-icon flag-icon-gb flag-small");
         butt2.setAttribute("onclick","changeFlag('gb')");
         butt2.style.cursor = 'pointer';
-        butt_lbl.textContent = "Język CV: ";
       } else {
 
         // Current language info
@@ -129,7 +126,6 @@
         butt2.setAttribute("class", "flag-icon flag-icon-pl flag-small");
         butt2.setAttribute("onclick","changeFlag('pl')");
         butt2.style.cursor = 'pointer';
-        butt_lbl.textContent = "CV Language: ";
       }
   }
 </script>
