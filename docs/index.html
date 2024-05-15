@@ -7,15 +7,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
 <title>Mateusz Gomulski - CV</title>
 <style>
-    html, body {
-      height: 100%;
-      overflow: hidden;
-    }
     body {
         margin: 0;
         padding: 0;
         overflow: hidden;
-        -webkit-overflow-scrolling: touch;
     }
     header {
       background-color: #212F3D;
@@ -78,13 +73,32 @@
     </div>
 </header>
 <div id="pdf-container">
-    <iframe id="pdf-viewer" src="Mateusz_Gomulski_CV.pdf" scrolling=no
-    type="application/pdf" frameborder="0" width="100%" height="100%"></iframe>
+    <iframe id="pdf-viewer" src="Mateusz_Gomulski_CV.pdf" frameborder="0" 
+    type="application/pdf" width="100%"></iframe>
 </div>
 <script>
   
   // Global variables
   var c_lang = 'gb';
+
+  // Function that detects if browser is mobile or not and changes height of
+  // PDF viewer based on it (neccessary to properly displays PDF in mobile
+  // browser)
+  window.addEventListener("DOMContentLoaded", function() {
+
+    // iFrame
+    var pdf_viewer = document.getElementById('pdf-viewer');
+    
+    // Detect if the page is viewed on a mobile device
+    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    
+    // Change iframe settings based on device type
+    if (isMobile) {
+      pdf_viewer.height = '400%';
+    } else {
+      pdf_viewer.height = '100%';
+    }
+  });
 
   // Function that changes source PDF
   function changeFlag(cntry_cd){
