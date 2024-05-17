@@ -5,10 +5,10 @@ My own re-implementation of the Hipster-CV template: https://github.com/latex-ni
 
 First page           |  Second page
 :-------------------------:|:-------------------------:
-![](/imgs/Mateusz_Gomulski_CV_page_1.jpg)  |  ![](/imgs/Mateusz_Gomulski_CV_page_2.jpg)
+![](/imgs/Mateusz_Gomulski_CV_PAGE_1.jpg)  |  ![](/imgs/Mateusz_Gomulski_CV_PAGE_2.jpg)
 
 ## Polish version of CV
 
 First page          |  Second page
 :-------------------------:|:-------------------------:
-![](/imgs/Mateusz_Gomulski_CV_PL_page_1.jpg)  |  ![](/imgs/Mateusz_Gomulski_CV_PL_page_2.jpg)
+![](/imgs/Mateusz_Gomulski_CV_PL_PAGE_1.jpg)  |  ![](/imgs/Mateusz_Gomulski_CV_PL_PAGE_2.jpg)
