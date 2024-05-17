@@ -77,15 +77,13 @@
     </button>
     </div>
 </header>
-<div id="pdf-container"></div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.6/pdfobject.min.js"></script>
+<div id="pdf-container">
+  <iframe id="pdf-viewer" src="Mateusz_Gomulski_CV.pdf"></iframe>
+</div>
 <script>
   
   // Global variables
   var c_lang = 'gb';
-
-  // Default PDF embeding
-  PDFObject.embed("Mateusz_Gomulski_CV.pdf", "#pdf-container");
 
   // Function that changes source PDF
   function changeFlag(cntry_cd){
@@ -100,7 +98,7 @@
         return;
       }
 
-      // Change source PDF and flags settings according to the desired 
+      // Change source PDF and flags settings according to the desired
       // language
       if (cntry_cd === 'pl'){
 
@@ -108,7 +106,8 @@
         c_lang = 'pl';
 
         // Changing source PDF
-        PDFObject.embed("Mateusz_Gomulski_CV_PL.pdf", "#pdf-container");
+        document.getElementById('pdf-viewer').setAttribute("src",
+        "Mateusz_Gomulski_CV_PL.pdf");
 
         // Changing setting of flag icons
         butt1.setAttribute("class", "flag-icon flag-icon-pl flag-large");
@@ -123,7 +122,7 @@
         c_lang = 'gb';
 
         // Changing source PDF
-        PDFObject.embed("Mateusz_Gomulski_CV.pdf", "#pdf-container");
+        pdf_viewer.setAttribute("src", "Mateusz_Gomulski_CV.pdf");
         
         // Changing setting of flag icons
         butt1.setAttribute("class", "flag-icon flag-icon-gb flag-large");
