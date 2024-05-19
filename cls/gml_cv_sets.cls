@@ -145,18 +145,19 @@ distance = 0, back arrow disabled = true, border color = bluecol}
   \begin{tikzpicture}
     \begin{polaraxis}[
         width=5cm, height=5cm, xtick={0, 40, ..., 320},
-        xticklabels={\bg{bluecol}{whitecol}{pandas}, 
-        \bg{bluecol}{whitecol}{matplotlib}, \bg{bluecol}{whitecol}{NumPy},
-        \bg{bluecol}{whitecol}{PyTorch}, \bg{bluecol}{whitecol}{Scikit-learn},
-        \bg{bluecol}{whitecol}{QuantLib}, \bg{bluecol}{whitecol}{Plotly},
-        \bg{bluecol}{whitecol}{SQLAlchemy},
-        \bg{bluecol}{whitecol}{SciPy}}, ytick={2,4,6,8,10}, yticklabels={},
-        ymin=0, ymax=10, grid=both, major grid style={whitecol}, minor grid 
-        style={whitecol}, every axis plot/.append style={thick}
+        xticklabels={\bg{bluecol}{whitecol}{GDAL}, 
+        \bg{bluecol}{whitecol}{SQLAlchemy}, \bg{bluecol}{whitecol}{NumPy},
+        \bg{bluecol}{whitecol}{Scikit-learn}, \bg{bluecol}{whitecol}{PyTorch},
+        \bg{bluecol}{whitecol}{Plotly}, \bg{bluecol}{whitecol}{QuantLib},
+        \bg{bluecol}{whitecol}{pandas}, \bg{bluecol}{whitecol}{SciPy}},
+        ytick={2, 4, 6, 8, 10}, yticklabels={}, ymin=0, ymax=10, grid=both,
+        major grid style={whitecol}, minor grid style={whitecol}, every axis 
+        plot/.append style={thick}
     ]
-    \addplot[color={purplecol}, fill={purplecol}, fill opacity=0.8,
-    line width=1mm] coordinates {
-      (0,8)(40,7)(80,9)(120,6)(160,5)(200,8)(240,7)(280,6)(320,9)(0,8)};
+    \addplot[draw={whitecol}, fill={purplecol}, fill opacity=0.8,
+    line width=1mm] coordinates{
+      (0,6)(40,7)(80,9)(120,6)(160,7)(200,9)(240,7)(280,6)(320,9)(0,6)};
+    \node at (axis cs:1,-1){\large \bfseries Python};
     \end{polaraxis}
 \end{tikzpicture}
 }
