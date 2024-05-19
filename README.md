@@ -1,5 +1,5 @@
 # GML-CV
-My own re-implementation of the Hipster-CV template: https://github.com/latex-ninja/hipster-cv, which extends the base implementation with new charts, QR code and hashtags, while reorganising the $\LaTeX$ code to make it easier to understand and modify, at the cost of not being able to change the colour scheme.
+My own re-implementation of the Hipster-CV template: https://github.com/latex-ninja/hipster-cv, which extends the base implementation with new charts, QR code and hashtags, while reorganising the $\LaTeX$ code to make it easier to understand and modify.
 
 ## English version of CV
 
