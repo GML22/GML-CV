@@ -71,23 +71,8 @@ Mateusz Gomulski}}{{\color{whitecol} \large Data Scientist}}{
 % IT and Programming
 \bg{bluecol}{white}{IT \& programming} \\
 
-\begin{minipage}[t]{0.3\textwidth}
-    \begin{tabular}{r @{\hspace{0.5em}}l}
-        \bg{bluecol}{whitecol}{MATLAB} & \barrule{0.32}{0.5em}{purplecol} \\
-        \bg{bluecol}{whitecol}{R} & \barrule{0.26}{0.5em}{purplecol} \\
-        \bg{bluecol}{whitecol}{SQL} & \barrule{0.22}{0.5em}{purplecol} \\
-        \bg{bluecol}{whitecol}{VBA} & \barrule{0.26}{0.5em}{purplecol} \\
-        \bg{bluecol}{whitecol}{Python} & \barrule{0.4}{0.5em}{bluecol} \\
-        \bg{bluecol}{whitecol}{\LaTeX} & \barrule{0.28}{0.5em}{purplecol} \\
-        \bg{bluecol}{whitecol}{JavaScript} & \barrule{0.15}{0.5em}{
-            purplecol} \\
-        \bg{bluecol}{whitecol}{Git} & \barrule{0.3}{0.5em}{purplecol} \\
-        \bg{bluecol}{whitecol}{QGIS} & \barrule{0.20}{0.5em}{purplecol} \\
-        \bg{bluecol}{whitecol}{Bloomberg Terminal} & \barrule{0.18}{0.5em}{
-            purplecol}
-    \end{tabular}
-\end{minipage}
-\smallskip
+% Scatter plot of programming skills
+\scatterplot{Programming skills [\%]}{Professional experience [in years]} \\
 
 % Key professional interests
 \bubblediagram{{\textbf{KEY} \\ \textbf{PROFESSIONAL} \\ \textbf{INTERESTS}},
@@ -227,13 +212,20 @@ speaker} \\
 % FIRST COLUMN OF THE SECOND PAGE
 {\setasidefontcolour
 
+% Python libraries
+\bg{bluecol}{white}{Most frequently used Python libraries} \\
+
+% Radar Plot
+\hspace{-2.7em}\radarplot
+\vspace{0.1em}
+
 % Portfolio
 \bgupper{bluecol}{white}{Portfolio}
 \vspace{-1em}
 
 % QR code
 \begin{center}
-    \includegraphics[height=3cm]{imgs/qr_code.png} \\
+    \includegraphics[height=2.5cm]{imgs/qr_code.png} \\
 \end{center}
 \vspace{-1em}
 
@@ -246,14 +238,7 @@ speaker} \\
 
 \textit{\footnotesize Convolutional Neural Network with U-Net architecture 
 designed to solve the problem of building detection in RGB aerial imagery} \\
-\vspace{-0.75em}
-
-\hashtag{python}
-\hashtag{pytorch}
-\hashtag{deep-learning} \\
-\hashtag{u-net}
-\hashtag{resnet}
-\hashtag{image-recognition} \\ \vspace{0.6em}
+\vspace{0.6em}
 
 % PostCodesMaps
 \bg{bluecol}{white}{\href{https://github.com/GML22/PostCodesMaps}{\underline{
@@ -261,15 +246,7 @@ designed to solve the problem of building detection in RGB aerial imagery} \\
 
 \textit{\footnotesize Python application that creates postcode maps in Poland 
 based on a set of address points from the Polish National Register of 
-Boundaries Database} \\ \vspace{-0.75em}
-
- \hashtag{python}
- \hashtag{javascript}
- \hashtag{sqlalchemy} \\
- \hashtag{numpy}
- \hashtag{scipy}
- \hashtag{leafletjs}
- \hashtag{gdal} \\ \vspace{0.6em}
+Boundaries Database} \\ \vspace{0.6em}
 
  % GeocoderPL
 \bg{bluecol}{white}{\href{https://github.com/GML22/GeocoderPL}{
@@ -277,25 +254,14 @@ Boundaries Database} \\ \vspace{-0.75em}
 
 \textit{\footnotesize Python application that can be used to geocode address 
 points in Poland and display basic information about the building associated 
-with a given address} \\ \vspace{-0.75em}
-
-\hashtag{python}
-\hashtag{sql}
-\hashtag{search-engine} \\
-\hashtag{numpy}
-\hashtag{pyqt5}
-\hashtag{superpermutation} \\ \vspace{0.6em}
+with a given address} \\ \vspace{0.6em}
 
 % Anti-Plag-Java
 \bg{bluecol}{white}{\href{https://github.com/GML22/Anti-Plag-Java}{\underline{
     4. gh/GML22/Anti-Plag-Java}}} \\
 
 \textit{\footnotesize Java application that detects plagiarism by comparing 
-source codes of projects} \\ \vspace{-0.75em}
-
-\hashtag{java}
-\hashtag{bst-tree}
-\hashtag{plagiarism-detect} \\ \vspace{0.6em}
+source codes of projects} \\ \vspace{0.6em}
 
 % Fed_QE_Model
 \bg{bluecol}{white}{\href{https://github.com/GML22/Fed\_QE\_Model}{\underline{
@@ -303,35 +269,21 @@ source codes of projects} \\ \vspace{-0.75em}
 
 \textit{\footnotesize Econometric analysis of the effectiveness of 
 unconventional monetary policy of the Federal Reserve during the economic 
-crisis - analysis for the period of 2008-2016} \\ \vspace{-0.75em}
-
-\hashtag{R}
-\hashtag{stata}
-\hashtag{var}
-\hashtag{svensson} \\ \vspace{0.6em}
+crisis - analysis for the period of 2008-2016} \\ \vspace{0.6em}
 
 % Oscars_Model
 \bg{bluecol}{white}{\href{https://github.com/GML22/Oscars\_Model}{\underline{
     6. gh/GML22/Oscars\_Model}}} \\ 
 
 \textit{\footnotesize Econometric analysis of economic and non-economic 
-factors affecting the probability of winning an Oscar} \\ \vspace{-0.75em}
-
-\hashtag{stata}
-\hashtag{lpm}
-\hashtag{logit}
-\hashtag{probit} \\ \vspace{0.6em}
+factors affecting the probability of winning an Oscar} \\ \vspace{0.6em}
 
 % VBA_Interactive_Map
 \bg{bluecol}{white}{ \href{https://github.com/GML22/VBA\_Interactive\_Map}{
     \underline{7. gh/GML22/VBA\_Interactive\_Map}}} \\ 
 
 \textit{\footnotesize Interactive map of Poland implemented in an Excel 
-spreadsheet showing data on the population of Poland} \\ \vspace{-0.75em}
-
-\hashtag{vba}
-\hashtag{excel}
-\hashtag{interactive-map}}}
+spreadsheet showing data on the population of Poland} \\}}
 
 % SECOND COLUMN OF THE SECOND PAGE
 \switchcolumn
