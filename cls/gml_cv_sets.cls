@@ -144,19 +144,20 @@ distance = 0, back arrow disabled = true, border color = bluecol}
 \newcommand{\radarplot}{
   \begin{tikzpicture}
     \begin{polaraxis}[
-        width=5cm, height=5cm, xtick={0, 40, ..., 320},
+        width=5cm, height=5cm, xtick={0, 36, ..., 324},
         xticklabels={\bg{bluecol}{whitecol}{GDAL}, 
         \bg{bluecol}{whitecol}{SQLAlchemy}, \bg{bluecol}{whitecol}{NumPy},
-        \bg{bluecol}{whitecol}{Scikit-learn}, \bg{bluecol}{whitecol}{PyTorch},
+        \bg{bluecol}{whitecol}{PyTorch}, \bg{bluecol}{whitecol}{Scikit-learn},
         \bg{bluecol}{whitecol}{Plotly}, \bg{bluecol}{whitecol}{QuantLib},
-        \bg{bluecol}{whitecol}{pandas}, \bg{bluecol}{whitecol}{SciPy}},
+        \bg{bluecol}{whitecol}{pandas}, \bg{bluecol}{whitecol}{SciPy},
+        \bg{bluecol}{whitecol}{rpy2}},
         ytick={2, 4, 6, 8, 10}, yticklabels={}, ymin=0, ymax=10, grid=both,
         major grid style={whitecol}, minor grid style={whitecol}, every axis 
         plot/.append style={thick}
     ]
     \addplot[draw={whitecol}, fill={purplecol}, fill opacity=0.8,
     line width=1mm] coordinates{
-      (0,6)(40,7)(80,9)(120,6)(160,7)(200,9)(240,7)(280,6)(320,9)(0,6)};
+      (0,6)(36,7)(72,9)(108,6)(144,7)(180,9)(216,7)(252,6)(288,9)(324,7)(0,6)};
     \node at (axis cs:1,-1){\large \bfseries Python};
     \end{polaraxis}
 \end{tikzpicture}
